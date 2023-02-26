@@ -509,14 +509,17 @@
                 type="email"
                 name="email"
                 placeholder="E-mail"
+                aria-label="email"
               />
               <button class="footer-content-item-form-submit" type="submit">
-                <div class="footer-content-item-form-submit-wrap">
-                  <p class="footer-content-item-form-submit-text">Subscribe</p>
-                  <svg width="24" height="20">
-                    <use href="./images/icons.svg#paper-plane"></use>
-                  </svg>
-                </div>
+                Subscribe
+                <svg
+                  class="footer-content-item-form-submit-svg"
+                  width="24"
+                  height="20"
+                >
+                  <use href="./images/icons.svg#paper-plane"></use>
+                </svg>
               </button>
             </form>
           </div>
@@ -543,14 +546,14 @@
               for="backdrop-modal-block-persone"
               >Name</label
             >
-            <input
-              class="backdrop-modal-block-input"
-              id="backdrop-modal-block-persone"
-              type="text"
-              name="persone-name"
-            />
             <div class="backdrop-modal-block-wrap">
-              <svg class="backdrop-modal-block-svg" width="18" height="18">
+              <input
+                class="backdrop-modal-block-input"
+                id="backdrop-modal-block-persone"
+                type="text"
+                name="persone-name"
+              />
+              <svg class="backdrop-modal-block-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
@@ -562,13 +565,13 @@
               for="backdrop-modal-block-phone"
               >Phone</label
             >
-            <input
-              class="backdrop-modal-block-input"
-              id="backdrop-modal-block-phone"
-              type="text"
-              name="phone-number"
-            />
             <div class="backdrop-modal-block-wrap">
+              <input
+                class="backdrop-modal-block-input"
+                id="backdrop-modal-block-phone"
+                type="text"
+                name="phone-number"
+              />
               <svg class="backdrop-modal-block-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
@@ -581,13 +584,13 @@
               for="backdrop-modal-block-email"
               >Email</label
             >
-            <input
-              class="backdrop-modal-block-input"
-              id="backdrop-modal-block-email"
-              type="text"
-              name="email"
-            />
             <div class="backdrop-modal-block-wrap">
+              <input
+                class="backdrop-modal-block-input"
+                id="backdrop-modal-block-email"
+                type="text"
+                name="email"
+              />
               <svg class="backdrop-modal-block-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
@@ -606,19 +609,17 @@
             ></textarea>
           </div>
 
-          <div class="backdrop-modal-block-policyWrapper">
-            <label class="backdrop-modal-block-policyWrapper-label">
-              <input
-                type="checkbox"
-                class="backdrop-modal-block-checkbox visually-hidden"
-              />
-              <div class="backdrop-modal-block-checkbox-decor"></div>
-              <p class="backdrop-modal-block-policy">
-                I accept the terms and conditions of the
-                <a href="#" class="plicy-link">Privacy Policy</a>
-              </p>
-            </label>
-          </div>
+          <label class="backdrop-modal-block-policy-label">
+            <input
+              type="checkbox"
+              class="backdrop-modal-block-checkbox visually-hidden"
+            />
+            <span class="backdrop-modal-block-checkbox-decor"></span>
+            <span class="backdrop-modal-block-policy">
+              I accept the terms and conditions of the
+              <a href="#" class="plicy-link">Privacy Policy</a>
+            </span>
+          </label>
 
           <div class="backdrop-modal-block-sendBlock">
             <button type="submit" class="backdrop-modal-block-send-button">
